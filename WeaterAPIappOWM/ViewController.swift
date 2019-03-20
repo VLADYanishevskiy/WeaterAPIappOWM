@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController , UISearchResultsUpdating {
 
+    var timer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +33,19 @@ class ViewController: UIViewController , UISearchResultsUpdating {
     
     // MARK: - UISearchResultsUpdating
     func updateSearchResults(for searchController: UISearchController) {
+        let city = searchController.searchBar.text!
+        
+        timer.invalidate()
+        
+        if(city != ""){
+            timer = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false, block: {(timer) in
+                NetworkManager.shared.getWeather(city: city, result: {(model) in
+                    for list in model!.list!{
+                        print(list.main?.temp)
+                    }
+                })
+            })
+        }
         
     }
     
