@@ -8,13 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UISearchResultsUpdating {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.setupNavigationBar();
     }
-
+    
+    fileprivate func setupNavigationBar(){
+        self.navigationItem.title = "Weather Application";
+        self.navigationController?.navigationBar.prefersLargeTitles = true;
+        
+        let searchController = UISearchController(searchResultsController: nil);
+        searchController.searchResultsUpdater = self;
+        
+        navigationItem.searchController = searchController;
+        navigationItem.hidesSearchBarWhenScrolling = false;
+        
+    }
+    
+    
+    // MARK: - UISearchResultsUpdating
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+    
+    //MARK: - UITableViewDataSource
 
 }
 

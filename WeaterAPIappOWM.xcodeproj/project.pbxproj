@@ -14,6 +14,7 @@
 		86067A3C22427C91003FDE53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86067A3A22427C91003FDE53 /* LaunchScreen.storyboard */; };
 		86067A4722427C91003FDE53 /* WeaterAPIappOWMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86067A4622427C91003FDE53 /* WeaterAPIappOWMTests.swift */; };
 		86067A5222427C91003FDE53 /* WeaterAPIappOWMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86067A5122427C91003FDE53 /* WeaterAPIappOWMUITests.swift */; };
+		86067A62224282B4003FDE53 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86067A61224282B4003FDE53 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		86067A4D22427C91003FDE53 /* WeaterAPIappOWMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeaterAPIappOWMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86067A5122427C91003FDE53 /* WeaterAPIappOWMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaterAPIappOWMUITests.swift; sourceTree = "<group>"; };
 		86067A5322427C91003FDE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86067A61224282B4003FDE53 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		86067A3022427C8F003FDE53 /* WeaterAPIappOWM */ = {
 			isa = PBXGroup;
 			children = (
+				86067A6022428293003FDE53 /* NetworkManager */,
 				86067A3122427C8F003FDE53 /* AppDelegate.swift */,
 				86067A3322427C8F003FDE53 /* ViewController.swift */,
 				86067A3522427C8F003FDE53 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				86067A5322427C91003FDE53 /* Info.plist */,
 			);
 			path = WeaterAPIappOWMUITests;
+			sourceTree = "<group>";
+		};
+		86067A6022428293003FDE53 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				86067A61224282B4003FDE53 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86067A62224282B4003FDE53 /* NetworkManager.swift in Sources */,
 				86067A3422427C8F003FDE53 /* ViewController.swift in Sources */,
 				86067A3222427C8F003FDE53 /* AppDelegate.swift in Sources */,
 			);
