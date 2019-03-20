@@ -15,6 +15,9 @@
 		86067A4722427C91003FDE53 /* WeaterAPIappOWMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86067A4622427C91003FDE53 /* WeaterAPIappOWMTests.swift */; };
 		86067A5222427C91003FDE53 /* WeaterAPIappOWMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86067A5122427C91003FDE53 /* WeaterAPIappOWMUITests.swift */; };
 		86067A62224282B4003FDE53 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86067A61224282B4003FDE53 /* NetworkManager.swift */; };
+		86067A652242852A003FDE53 /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86067A642242852A003FDE53 /* OfferModel.swift */; };
+		86067A6722428595003FDE53 /* ListOfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86067A6622428595003FDE53 /* ListOfferModel.swift */; };
+		86067A69224285DB003FDE53 /* MainOfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86067A68224285DB003FDE53 /* MainOfferModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		86067A5122427C91003FDE53 /* WeaterAPIappOWMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaterAPIappOWMUITests.swift; sourceTree = "<group>"; };
 		86067A5322427C91003FDE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86067A61224282B4003FDE53 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		86067A642242852A003FDE53 /* OfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
+		86067A6622428595003FDE53 /* ListOfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfferModel.swift; sourceTree = "<group>"; };
+		86067A68224285DB003FDE53 /* MainOfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOfferModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		86067A3022427C8F003FDE53 /* WeaterAPIappOWM */ = {
 			isa = PBXGroup;
 			children = (
+				86067A6322428516003FDE53 /* OfferModel */,
 				86067A6022428293003FDE53 /* NetworkManager */,
 				86067A3122427C8F003FDE53 /* AppDelegate.swift */,
 				86067A3322427C8F003FDE53 /* ViewController.swift */,
@@ -134,6 +141,16 @@
 				86067A61224282B4003FDE53 /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		86067A6322428516003FDE53 /* OfferModel */ = {
+			isa = PBXGroup;
+			children = (
+				86067A642242852A003FDE53 /* OfferModel.swift */,
+				86067A6622428595003FDE53 /* ListOfferModel.swift */,
+				86067A68224285DB003FDE53 /* MainOfferModel.swift */,
+			);
+			path = OfferModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +286,10 @@
 			files = (
 				86067A62224282B4003FDE53 /* NetworkManager.swift in Sources */,
 				86067A3422427C8F003FDE53 /* ViewController.swift in Sources */,
+				86067A652242852A003FDE53 /* OfferModel.swift in Sources */,
 				86067A3222427C8F003FDE53 /* AppDelegate.swift in Sources */,
+				86067A6722428595003FDE53 /* ListOfferModel.swift in Sources */,
+				86067A69224285DB003FDE53 /* MainOfferModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

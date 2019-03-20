@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class NetworkManager{
+    private init() {}
+    
+    static let shared:NetworkManager = NetworkManager();
+    
+    func getWeather(city:String){
+        
+    }
+    
+}
